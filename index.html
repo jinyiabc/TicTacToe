@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ticTacToe">
+  <head>
+    <base href="/" >
+    <title>Tic Tac Toe</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular-animate.min.js"></script>
+    <script src="app/app.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+    </style>
+  </head>
+  <body>
+    <div class="content" style="text-aligh:center;" ng-controller="ticController">
+      <h1>Tic Tac Toe</h1>
+
+<div id="promptWindow" class="check-element animate-show-hide" ng-show="isShow()" ng-click="nextGame()">
+</div>
+
+
+<div class="www" class="animate-show-hide" ng-hide="isShow()">
+  <button id="pos0" ng-click="pos0()"></button>
+  <button id="pos1" ng-click="pos1()"></button>
+  <button id="pos2" ng-click="pos2()"></button>
+</div>
+<div class="www" class="animate-show-hide" ng-hide="isShow()">
+  <button id="pos3" ng-click="pos3()"></button>
+  <button id="pos4" ng-click="pos4()"></button>
+  <button id="pos5" ng-click="pos5()"></button>
+</div>
+<div class="www" class="animate-show-hide" ng-hide="isShow()">
+  <button id="pos6" ng-click="pos6()"></button>
+  <button id="pos7" ng-click="pos7()"></button>
+  <button id="pos8" ng-click="pos8()"></button>
+</div>
+
+
+    </div>
+  </body>
+</html>
